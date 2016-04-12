@@ -18,7 +18,7 @@ touch database/database.sqlite
 php artisan migrate
 php artisan db:seed
 php artisan key:generate
-php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider"
 php artisan jwt:secret
 ```
 
