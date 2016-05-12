@@ -13,13 +13,14 @@ git clone https://github.com/layer7be/vue-starter-laravel-api
 
 ### Step 2: Prerequisites
 ```
+cp .env.example .env
 composer install
 touch database/database.sqlite
 php artisan migrate
 php artisan db:seed
 php artisan key:generate
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider"
-php artisan jwt:secret
+php artisan jwt:generate
 ```
 
 ### Step 3: Serve
